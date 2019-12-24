@@ -1,2 +1,2 @@
-# betsychou.github.io
+# elexc.github.io
 Personal website
