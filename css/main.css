@@ -14,26 +14,31 @@ body {
     margin: 60px auto;
     width: 70%;
     font-family:'X', 'Helvetica', 'Arial', 'Sans-Serif';
+    background-color: #faf5e4;
 }
 
 nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    display: flex;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
-a {
-    text-decoration: none;
-    color: #999;
+
+footer ul li:nth-child(even) {
+    width: 6px;
+    height: 6px;
+    margin: auto 20px auto 0;
+    background: #2c786c;
+    transform: rotate(45deg);
 }
-a:hover {
-    text-decoration: underline;
-}
+
 h1 {
     font-size: 3em;
+    color: #004445;
 }
 p {
     font-size: 1.5em;
@@ -52,4 +57,43 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+    
 }
+
+a {
+    text-decoration: none;
+    color: #2c786c;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: fit-content;
+}
+
+
+  a:before, span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #2c786c;
+  }
+
+  a:after {
+    right: 2.5px;
+    background: #2c786c;
+    transition: width 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  a:hover:before {
+    background: #2c786c;
+    width: 100%;
+    transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
