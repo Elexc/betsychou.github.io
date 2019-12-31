@@ -22,31 +22,46 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
     display: flex;
+    align-items: center;
 }
+
+nav ul{
+    justify-content: flex-end;
+}
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
 
-footer ul li:nth-child(even) {
-    width: 6px;
-    height: 6px;
-    margin: auto 20px auto 0;
-    background: #2c786c;
-    transform: rotate(45deg);
-}
+nav ul li.push {
+    margin-right: auto;
+    color: #004445;
+    font-size: 1.5em;
+} 
+
+nav ul li.logo {
+    margin: auto 8px 0px 0px;
+} 
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     color: #004445;
 }
-p {
+
+h2 {
     font-size: 1.5em;
+    color: #004445; 
+}
+
+
+p {
+    font-size: 1.25em;
     line-height: 1.4em;
     color: #333;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 2px solid #f8b400;
     font-size: .8em;
 }
 
@@ -96,4 +111,8 @@ a {
     background: transparent;
     width: 100%;
     transition: 0s;
+  }
+
+  .container {
+      margin-top: 68px;
   }
