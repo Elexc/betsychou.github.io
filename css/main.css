@@ -84,11 +84,6 @@ a {
     width: fit-content;
 }
 
-a:active {
-    color: #f8b400;
-  }
-
-
   a:before, span:after {
     content: '';
     position: absolute;
