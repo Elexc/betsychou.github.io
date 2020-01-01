@@ -86,21 +86,16 @@ h1 {
 h2 {
     font-size: var(--fontsize-bigger);
     color:var(--colors-primary); 
-    margin: 48px 0 0 0;
-}
-
-h3 {
-    font-size: var(--fontsize-big);
     margin: 0;
 }
 
-h4 {
-    font-size: var(--fontsize-small);
+h3 {
+    font-size: var(--fontsize-normal);
 }
 
 
 p {
-    font-size: var(--fontsize-normal);
+    font-size: var(--fontsize-big);
     line-height: 1.4em;
     margin: var(--space-2) 0;
 }
@@ -122,20 +117,21 @@ p {
 }
 
 .card-container {
-    display:  flex;
+    display: grid;
 }
 
 .card {
     background-color:var(--colors-lightbackground);
     border-radius: 4px;
     box-shadow: -1px 2px 4px rgba(0,0,0,.25), 1px 1px 3px rgba(0,0,0,.1);
-    margin: var(--space-3) auto 0;
+    margin: var(--space-3) 0 0;
     display: flex;
     flex-direction: row;
 }
 
 .card-media {
-    width: 100%;
+    width: 27.5%;
+    margin: 8.33% 6.25%;
 }
 
 .card-details {
