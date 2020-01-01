@@ -18,7 +18,6 @@
     --space-4: 32px;
     --space-5: 40px;
     --space-6: 60px; 
-    --fontsize-small: .8em;
     --fontsize-normal: 1rem;
     --fontsize-big: 1.25rem;
     --fontsize-bigger: 1.5rem;
@@ -143,9 +142,9 @@ p {
 }
 
 footer {
-    margin-top: var(--space-3);
+    margin: var(--space-5) auto;
     border-top: 2px solid var(--colors-tertiary);
-    font-size: var(--fontsize-small);
+    font-size: var(--fontsize-normal);
 }
 
 ul.posts { 
@@ -220,4 +219,8 @@ a {
     background:var(--colors-secondary );
     color: white;
     transition: all 0.1s linear;
+  }
+
+  .sign {
+      float: right;
   }
