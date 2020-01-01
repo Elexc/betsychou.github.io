@@ -136,6 +136,10 @@ p {
     margin: 8.33% 6.25%;
 }
 
+.card-img {
+    max-width: 100%;
+}
+
 .card-details {
     width: 48%;
     padding: var(--space-4) var(--space-3);
