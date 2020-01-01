@@ -14,9 +14,10 @@
     --space-0: 0;
     --space-1: 4px;
     --space-2: 8px;
-    --space-3: 20px;
-    --space-4: 40px;
-    --space-5: 60px; 
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 40px;
+    --space-6: 60px; 
     --fontsize-small: .8em;
     --fontsize-normal: 1rem;
     --fontsize-big: 1.25rem;
@@ -30,8 +31,10 @@
     --colors-primary: #004445;
     --colors-secondary: #2c786c;
     --colors-tertiary: #f8b400;
-    --colors-tertiarylight: #fce199;
+    --colors-lighttertiary: #fce199;
     --colors-background: #faf5e4;
+    --colors-lightbackground: #fefcf7;
+    --colors-caption: #707070;
     --colors-text: #333;
     --rounded: 4px;
 
@@ -53,7 +56,7 @@ nav ul, footer ul {
 }
 
 nav ul{
-    margin-top: var(--space-5);
+    margin-top: var(--space-6);
     justify-content: flex-end;
 }
 
@@ -88,6 +91,7 @@ h2 {
 
 h3 {
     font-size: var(--fontsize-big);
+    margin: 0;
 }
 
 h4 {
@@ -98,25 +102,34 @@ h4 {
 p {
     font-size: var(--fontsize-normal);
     line-height: 1.4em;
+    margin: var(--space-2) 0;
 }
 
 .intro {
     font-weight: normal;
 }
 
+.caption {
+    color: var(--colors-caption);
+}
+
 .header-background {
-    background: var(--colors-tertiarylight);
+    background: var(--colors-lighttertiary);
     box-sizing: border-box;
     display: inline-block;
     padding: var(--space-1) var(--space-2);
     border-radius: var(--space-1);
 }
 
+.card-container {
+    display:  flex;
+}
+
 .card {
-    background-color: #fff;
+    background-color:var(--colors-lightbackground);
     border-radius: 4px;
     box-shadow: -1px 2px 4px rgba(0,0,0,.25), 1px 1px 3px rgba(0,0,0,.1);
-    margin: var(--space-3) auto;
+    margin: var(--space-3) auto 0;
     display: flex;
     flex-direction: row;
 }
@@ -126,16 +139,17 @@ p {
 }
 
 .card-details {
-    padding: 5px 15px;
+    padding: var(--space-4) var(--space-3);
 }
 
 footer {
+    margin-top: var(--space-3);
     border-top: 2px solid var(--colors-tertiary);
     font-size: var(--fontsize-small);
 }
 
 ul.posts { 
-    margin: var(--space-3) auto var(--space-4); 
+    margin: var(--space-4) auto var(--space-5); 
     font-size: var(--fontsize-bigger);
 }
 
@@ -186,5 +200,5 @@ a {
   }
 
   .container {
-      margin-top: var(--space-5);
+      margin-top: var(--space-6);
   }
