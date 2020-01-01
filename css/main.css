@@ -91,6 +91,8 @@ h2 {
 
 h3 {
     font-size: var(--fontsize-normal);
+    font-weight: normal;
+    margin: 0;
 }
 
 
@@ -109,6 +111,7 @@ p {
 }
 
 .header-background {
+    margin: var(--space-6) 0 0;
     background: var(--colors-lighttertiary);
     box-sizing: border-box;
     display: inline-block;
@@ -135,6 +138,7 @@ p {
 }
 
 .card-details {
+    width: 48%;
     padding: var(--space-4) var(--space-3);
 }
 
@@ -156,11 +160,11 @@ ul.posts li {
 
 a {
     text-decoration: none;
-    color: var(--colors-secondary);
     font-weight: bold;
 }
 
 .link {
+    color: var(--colors-secondary);
     position: relative;
     display: block;
     cursor: pointer;
@@ -196,5 +200,24 @@ a {
   }
 
   .container {
-      margin-top: var(--space-6);
+    margin-top: var(--space-6);
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: var(--space-2);
+    color:var(--colors-secondary);
+    font-size: var(--fontsize-normal);
+    border-color:var(--colors-secondary);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    padding: var(--space-2);
+    transition: all 0.2s linear;
+  }
+
+  .button:hover {
+    background:var(--colors-secondary );
+    color: white;
+    transition: all 0.1s linear;
   }
