@@ -133,9 +133,9 @@ p {
 
 .card-media {
     width: 27.5%;
-    margin: 8.33% 6.25%;
+    margin: var(--space-3)
 }
-
+   
 .card-img {
     max-width: 100%;
 }
