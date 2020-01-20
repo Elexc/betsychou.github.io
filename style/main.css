@@ -231,7 +231,7 @@ body > * {
     margin: auto;
 }
 
-#hero {
+#webhero {
     margin-top: 32px;
     width: 100%;
     height: 320px;
@@ -240,16 +240,63 @@ body > * {
     flex-direction: column;
 }
 
-#hero > svg {
+#webhero > svg {
     width: 500px;
     margin: auto;
 }
 
-#hero > h1 {
+#webhero > h1 {
     margin: auto;
     font-size: var(--fontsize-bigger);
     color: rgba(255, 255, 255, 0.3);
     font-weight: normal;
+}
+
+#h1bhero {
+    margin-top: 32px;
+    width: 100%;
+    height: 320px;
+    background: #1A3664;
+    display: flex;
+    flex-direction: column;
+}
+
+#h1bhero > svg {
+    width: 500px;
+    margin: auto;
+}
+
+#h1bhero > h1 {
+    margin: auto;
+    font-size: var(--fontsize-bigger);
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: normal;
+}
+
+#harborhero {
+    margin-top: 32px;
+    width: 100%;
+    height: 320px;
+    background: #082656;
+    display: flex;
+    flex-direction: column;
+}
+
+#harborhero > svg {
+    width: 500px;
+    margin: auto;
+}
+
+#harborhero > h1 {
+    margin: auto;
+    font-size: var(--fontsize-bigger);
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: normal;
+}
+
+.large-logo {
+    width: 500px;
+    margin: auto auto var(--space-3) auto;
 }
 
 section {
