@@ -209,7 +209,6 @@ a {
 
 .button {
     display: inline-block;
-    margin-top: var(--space-2);
     color:var(--colors-secondary);
     font-size: var(--fontsize-normal);
     border-color:var(--colors-secondary);
