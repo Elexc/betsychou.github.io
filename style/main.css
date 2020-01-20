@@ -119,13 +119,17 @@ p {
 }
 
 .header-background {
-    margin: var(--space-6) 15% 0;
+    margin: var(--space-5) 15% 0;
     width: initial;
     background: var(--colors-lighttertiary);
     box-sizing: border-box;
     display: inline-block;
     padding: var(--space-1) var(--space-2);
     border-radius: var(--space-1);
+}
+
+.container {
+    margin-bottom: var(--space-4);
 }
 
 .card-container {
@@ -342,13 +346,15 @@ section > img {
     margin: auto;
 }
 
-#input-area input {
+#passcode {
     margin-top: 40px;
+    margin-right: var(--space-2);
     border-radius: 4px;
     padding: 8px 12px;
     height: 24px;
     width: 120px;
     border: none;
+    font-size: 12px;
 }
 
 #invalid-passcode {
