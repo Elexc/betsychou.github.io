@@ -223,7 +223,8 @@ a {
 }
 
 .sign {
-    float: right;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 body > * {
