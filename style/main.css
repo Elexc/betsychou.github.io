@@ -85,6 +85,11 @@ h1 {
     color: var(--colors-primary);
 }
 
+.overview {
+    color: var(--colors-text);
+    margin-top: var(--space-3);
+}
+
 h2 {
     font-size: var(--fontsize-bigger);
     color:var(--colors-primary); 
@@ -101,14 +106,15 @@ h3 {
 p {
     font-size: var(--fontsize-big);
     line-height: 1.4em;
-    margin: var(--space-2) 0;
+    margin: var(--space-3) 0;
 }
 
 .intro {
     font-weight: normal;
 }
 
-.caption {
+.sub-header {
+    margin-top: var(--space-1);
     color: var(--colors-caption);
 }
 
@@ -142,10 +148,6 @@ p {
    
 .card-img {
     max-width: 100%;
-}
-
-.card-description {
-    margin: var(--space-3) 0;
 }
 
 .card-details {
@@ -265,9 +267,11 @@ section > img {
     margin: 28px 10% auto 10%;
 }
 
-#caption {
+.caption {
     text-align: center;
+    font-size: var(--fontsize-normal);
     font-style: italic;
+    margin-top: 0;
     color: var(--colors-caption);
 }
 
@@ -312,4 +316,12 @@ section > img {
     padding: 8px;
     border-radius: 50%;
     border: 4px solid var(--colors-primary);
+}
+
+.principles {
+    font-size: var(--fontsize-big)
+}
+
+.top {
+    font-weight: bold;
 }
