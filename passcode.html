@@ -19,7 +19,7 @@
 			</div>
 			<div id="input-area">
 				<input id="passcode" type="password" placeholder="Passcode" required>
-				<p id="invalid-passcode">Invalid passcode.</p>
+				<p id="invalid-passcode">Incorrect passcode.</p>
 			</div>
 		</div>
 		<script>
@@ -27,7 +27,7 @@
 			.addEventListener("keyup", function(event) {
 			event.preventDefault();
 			if (event.keyCode === 13) {
-				if (document.getElementById("passcode").value === "2714"){
+				if (document.getElementById("passcode").value === "6104"){
 					window.location.href = 'h-1b';
 				}
 				else {
