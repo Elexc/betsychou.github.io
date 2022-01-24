@@ -1,15 +1,3 @@
-@font-face {
-  font-family: X;
-  src: url(X-Regular.woff2);
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: X;
-  src: url(X-Bold.woff2);
-  font-weight: bold;
-}
-
 :root {
     --space-0: 0;
     --space-1: 4px;
@@ -18,36 +6,41 @@
     --space-4: 32px;
     --space-5: 40px;
     --space-6: 60px; 
+    --space-7: 80px;
     --fontsize-normal: 1rem;
     --fontsize-big: 1.25rem;
     --fontsize-bigger: 1.5rem;
-    --fontsize-huge: 2.5rem;
+    --fontsize-huge: 3.25rem;
     --breakpoints-0: 414px;
     --breakpoints-1: 592px;
     --breakpoints-2: 670px;
     --breakpoints-3: 900px;
     --breakpoints-4: 1080px;
-    --colors-primary: #004445;
-    --colors-secondary: #2c786c;
-    --colors-tertiary: #f8b400;
-    --colors-lighttertiary: #fce199;
-    --colors-background: #faf5e4;
-    --colors-lightbackground: #fefcf7;
-    --colors-caption: #707070;
-    --colors-text: #333;
+    --colors-primary: #472C1A;
+    --colors-secondary: #A65816;
+    --colors-caption: #926B56;
+    --colors-light: #D7C1B6;
+    --colors-active: #2478A8;
+    --colors-background-blue: #EBF5FB;
+    --colors-background-yellow: #F2F0E9;
     --rounded: 4px;
 
 }
 
 body {
-    font-family:'X', 'Helvetica', 'Arial', 'Sans-Serif';
-    background-color: var(--colors-background);
-    color: var(--colors-text);
+    font-family: 'PT Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(var(--colors-background-blue), var(--colors-background-yellow));
+    color: var(--colors-primary);
     margin: 0;
 }
 
+nav .link, h1, h2, h3 {
+    font-family: 'PT Serif', Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    font-weight: normal;
+}
+
 .who {
-    margin-top: var(--space-6)
+    margin-top: var(--space-7);
 }
 
 nav ul, footer ul {
@@ -78,7 +71,7 @@ nav ul li.push {
 
 nav ul li.logo {
     margin: auto var(--space-2) 0px 0px;
-} 
+}
 
 h1 {
     font-size: var(--fontsize-huge);
@@ -86,13 +79,13 @@ h1 {
 }
 
 .overview {
-    color: var(--colors-text);
+    color: var(--colors-primary);
     margin-top: var(--space-3);
 }
 
 h2 {
     font-size: var(--fontsize-bigger);
-    color:var(--colors-primary); 
+    color:var(--colors-secondary); 
     margin: 0;
 }
 
@@ -105,12 +98,15 @@ h3 {
 
 p {
     font-size: var(--fontsize-big);
-    line-height: 1.4em;
+    line-height: 2em;
     margin: var(--space-3) 0;
 }
 
-.intro {
-    font-weight: normal;
+.container a:link {
+    text-decoration: none;
+    color: var(--colors-primary);
+    border: none;
+    border-bottom: 2px dotted var(--colors-light);
 }
 
 .sub-header {
@@ -119,9 +115,9 @@ p {
 }
 
 .header-background {
-    margin: var(--space-5) 15% 0;
+    margin: var(--space-5) var(--space-7) var(--space-4);
+    color: var(--colors-primary);
     width: initial;
-    background: var(--colors-lighttertiary);
     box-sizing: border-box;
     display: inline-block;
     padding: var(--space-1) var(--space-2);
@@ -130,33 +126,20 @@ p {
 
 .container {
     margin-bottom: var(--space-4);
+    max-width: 800px;
 }
 
 .card-container {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card {
-    background-color:var(--colors-lightbackground);
-    border-radius: 4px;
-    box-shadow: -1px 2px 4px rgba(0,0,0,.25), 1px 1px 3px rgba(0,0,0,.1);
-    margin: var(--space-3) 0 0;
-    display: flex;
-    flex-direction: row;
-}
-
-.card-media {
-    width: 27.5%;
-    margin: var(--space-3)
+    max-width: 600px;
 }
    
 .card-img {
-    max-width: 100%;
-}
-
-.card-details {
-    width: 60%;
-    padding: var(--space-4) var(--space-3);
+    width: 100%;
 }
 
 footer {
@@ -175,132 +158,25 @@ ul.posts li {
     
 }
 
-a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .link {
-    color: var(--colors-secondary);
+    color: var(--colors-primary);
     position: relative;
     display: block;
     cursor: pointer;
     width: fit-content;
+    text-decoration: none;
 }
 
-.link:after {
-    content: '';
-    position: absolute;
-    width: 0; 
-    height: 3px;
-    display: block;
-    margin-top: 4px;
-    right: 0;
-    background: var(--colors-secondary);
-    transition: width .3s ease;
-    -webkit-transition: width .3s ease;
+.link:hover {
+    color: var(--colors-secondary)
 }
 
-.link:hover:after{
-    width: 100%;
-    left: 0;
-    background: var(--colors-secondary);
-  }
-
-.button {
-    display: inline-block;
-    color:var(--colors-secondary);
-    font-size: var(--fontsize-normal);
-    border-color:var(--colors-secondary);
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 4px;
-    padding: var(--space-2);
-    transition: all 0.2s linear;
-}
-
-.button:hover {
-    background:var(--colors-secondary );
-    color: white;
-    transition: all 0.1s linear;
-}
-
-.sign {
-    margin-left: auto;
-    margin-right: 0;
+.link.active {
+    color: var(--colors-active);
 }
 
 body > * {
-    width: 70%;
-    margin: auto;
-}
-
-#webhero {
-    margin-top: 32px;
-    width: 100%;
-    height: 320px;
-    background: #116bb7;
-    display: flex;
-    flex-direction: column;
-}
-
-#webhero > svg {
-    width: 500px;
-    margin: auto;
-}
-
-#webhero > h1 {
-    margin: auto;
-    font-size: var(--fontsize-bigger);
-    color: rgba(255, 255, 255, 0.3);
-    font-weight: normal;
-}
-
-#h1bhero {
-    margin-top: 32px;
-    width: 100%;
-    height: 320px;
-    background: #1A3664;
-    display: flex;
-    flex-direction: column;
-}
-
-#h1bhero > svg {
-    width: 500px;
-    margin: auto;
-}
-
-#h1bhero > h1 {
-    margin: auto;
-    font-size: var(--fontsize-bigger);
-    color: rgba(255, 255, 255, 0.3);
-    font-weight: normal;
-}
-
-#harborhero {
-    margin-top: 32px;
-    width: 100%;
-    height: 320px;
-    background: #082656;
-    display: flex;
-    flex-direction: column;
-}
-
-#harborhero > svg {
-    width: 500px;
-    margin: auto;
-}
-
-#harborhero > h1 {
-    margin: auto;
-    font-size: var(--fontsize-bigger);
-    color: rgba(255, 255, 255, 0.3);
-    font-weight: normal;
-}
-
-.large-logo {
-    width: 500px;
-    margin: auto auto var(--space-3) auto;
+    margin: auto var(--space-7);
 }
 
 section {
