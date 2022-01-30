@@ -186,10 +186,6 @@ h4 {
     color: var(--colors-secondary)
 }
 
-.link.active {
-    color:  var(--colors-active);
-}
-
 section {
     margin-bottom: 20px;
 }
