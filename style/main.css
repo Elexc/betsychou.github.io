@@ -322,4 +322,17 @@ body.lockscreen {
     .card-container {
         flex-direction: column;
     }
+
+    .who {
+        margin-top: var(--space-6);
+    }
+
+    .header-background {
+        margin-top: var(--space-5);
+    }
+
+    .center-container {
+        width: fit-content;
+        margin: 0 auto;
+    }
 }
