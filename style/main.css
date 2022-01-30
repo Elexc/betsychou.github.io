@@ -120,6 +120,7 @@ h4 {
 }
 
 .container a:hover {
+    color: var(--colors-primary);
     border-bottom: 1px solid var(--colors-primary);
 }
 
