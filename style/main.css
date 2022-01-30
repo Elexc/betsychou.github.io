@@ -112,7 +112,7 @@ h4 {
     margin: var(--space-4) 0;
 }
 
-.container a:link {
+.container a:link, a:visited {
     text-decoration: none;
     color: var(--colors-primary);
     border: none;
