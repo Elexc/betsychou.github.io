@@ -152,6 +152,11 @@ h4 {
    justify-content: space-between;
 }
 
+.card {
+    max-width: 348px;
+    width: 100%;
+}
+
 .card.first {
     padding-right: var(--space-5);
 }
@@ -165,7 +170,6 @@ h4 {
 }
 
 .card-img {
-    max-width: 348px;
     width: 100%;
 }
 
@@ -313,5 +317,9 @@ body.lockscreen {
 
     .card.first, .card.middle, .card.last {
         padding-right: 0;
+    }
+
+    .card-container {
+        flex-direction: column;
     }
 }
